@@ -41,7 +41,7 @@ const getWorkout = async (req , res)=>{
     workout.save().then(()=>{
         res.status(201).json({workout})
     }).catch((err)=>{
-        res.status(400).json({error: "Error creatin g workout", details: err.message})
+        res.status(400).json({error: err.message})
     })
  }
 // delete a workout 
