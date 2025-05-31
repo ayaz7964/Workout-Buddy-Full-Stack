@@ -14,7 +14,7 @@ mongoose.connect(process.env.DB_URL).then(()=>{
 const workoutsRoutes = require('./Routes/workouts')
 
 // Middleware to parse JSON bodies
-app.use(express.json());
+app.use(express.json()); 
 // Middleware to log requests 
 
 app.use((req , res , next )=>{

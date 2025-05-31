@@ -4,6 +4,7 @@ import Home from "./Pages/Home"
 import NavBar from "./Component/NavBar"
 
 
+
 function App() {
 
   return (
